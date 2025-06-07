@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="عيادة ابتسامة آشور - زراعة الأسنان، تقويم الأسنان، تجميل الوجه والفكين، بإشراف الدكتور مجتبى أحمد صبيح." />
+  <title>ابتسامة آشور | Ashur Smile</title>
+  <link rel="icon" href="ashur-icon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #bfa14b;
+      direction: rtl;
+      text-align: right;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #bfa14b;
+    }
+    header img {
+      height: 60px;
+    }
+    .lang-toggle {
+      cursor: pointer;
+      font-size: 16px;
+      border: 1px solid #bfa14b;
+      padding: 6px 12px;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #bfa14b;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #bfa14b;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #bfa14b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery a img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transition: transform 0.3s;
+    }
+    .gallery a img:hover {
+      transform: scale(1.05);
+    }
+    .reviews {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .review {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-left: 4px solid #bfa14b;
+      background-color: #fff;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #f7f7f7;
+      text-align: center;
+      padding: 20px;
+      color: #bfa14b;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="ashur-logo.png" alt="Ashur Smile Logo" />
+    <div class="lang-toggle" onclick="toggleLang()">English</div>
+  </header>
+
+  <section id="home">
+    <h2 id="title">ابتسامة آشور</h2>
+    <p id="intro">عيادة متخصصة في زراعة الأسنان، تقويم الأسنان، وتجميل الوجه، بقيادة الدكتور مجتبى أحمد صبيح.</p>
+    <a id="bookBtn" href="https://docs.google.com/forms/d/e/1FAIpQLSctDA9X1iu5atoDZYh_nhEfb2dVo6mBNJnJKjwno46KiOeAVg/viewform" class="button" target="_blank">احجز الآن</a>
+  </section>
+
+  <section id="about">
+    <h2 id="aboutTitle">من نحن</h2>
+    <p id="aboutText">في مركز ابتسامة آشور، نُقدّم رعاية متكاملة تجمع بين الخبرة الطبية والتقنيات الحديثة لابتسامة مثالية ومظهر مشرق.</p>
+  </section>
+
+  <section id="services">
+    <h2 id="servicesTitle">خدماتنا</h2>
+    <ul id="servicesList">
+      <li>زراعة الأسنان</li>
+      <li>تقويم الأسنان</li>
+      <li>تجميل الوجه والفكين</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2 id="galleryTitle">معرض الصور</h2>
+    <div class="gallery">
+      <a href="gallery1.jpg" data-lightbox="clinic-gallery" data-title="صورة 1"><img src="gallery1.jpg" alt="صورة 1"></a>
+      <a href="gallery2.jpg" data-lightbox="clinic-gallery" data-title="صورة 2"><img src="gallery2.jpg" alt="صورة 2"></a>
+      <a href="gallery3.jpg" data-lightbox="clinic-gallery" data-title="صورة 3"><img src="gallery3.jpg" alt="صورة 3"></a>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2 id="reviewsTitle">آراء المرضى</h2>
+    <div class="reviews">
+      <div class="review">"أفضل عيادة زرتها، تعامل راقٍ وخبرة عالية!"</div>
+      <div class="review">"خدمة ممتازة وشعور بالراحة من أول زيارة."</div>
+      <div class="review">"الدكتور مجتبى محترف ومتفهم، أنصح الجميع بالزيارة."</div>
+    </div>
+  </section>
+
+  <section id="map">
+    <h2 id="mapTitle">موقع العيادة</h2>
+    <iframe src="https://www.google.com/maps?q=33.308251,44.394015&z=15&output=embed" allowfullscreen loading="lazy"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2 id="contactTitle">تواصل معنا</h2>
+    <p id="address">العنوان: بغداد – كويريش – حي الربيع – الطابق الأرضي</p>
+    <p id="phone">الهاتف: 07725006748</p>
+    <p id="email">البريد الإلكتروني: Mujtaba.a.sa@gmail.com</p>
+  </section>
+
+  <footer>
+    © 2025 ابتسامة آشور | Ashur Smile. جميع الحقوق محفوظة.
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script>
+    let isArabic = true;
+    function toggleLang() {
+      isArabic = !isArabic;
+      document.documentElement.lang = isArabic ? 'ar' : 'en';
+      document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
+      document.querySelector('.lang-toggle').innerText = isArabic ? 'English' : 'العربية';
+
+      document.getElementById("title").innerText = isArabic ? "ابتسامة آشور" : "Ashur Smile";
+      document.getElementById("intro").innerText = isArabic ? "عيادة متخصصة في زراعة الأسنان، تقويم الأسنان، وتجميل الوجه، بقيادة الدكتور مجتبى أحمد صبيح." : "A specialized clinic in dental implants, orthodontics, and facial aesthetics led by Dr. Mujtaba Ahmed Sabeih.";
+      document.getElementById("bookBtn").innerText = isArabic ? "احجز الآن" : "Book Now";
+      document.getElementById("aboutTitle").innerText = isArabic ? "من نحن" : "About Us";
+      document.getElementById("aboutText").innerText = isArabic ? "في مركز ابتسامة آشور، نُقدّم رعاية متكاملة تجمع بين الخبرة الطبية والتقنيات الحديثة لابتسامة مثالية ومظهر مشرق." : "At Ashur Smile, we provide comprehensive care combining medical expertise and modern technologies for a perfect smile and a radiant look.";
+      document.getElementById("servicesTitle").innerText = isArabic ? "خدماتنا" : "Our Services";
+      document.getElementById("servicesList").innerHTML = isArabic
+        ? "<li>زراعة الأسنان</li><li>تقويم الأسنان</li><li>تجميل الوجه والفكين</li>"
+        : "<li>Dental Implants</li><li>Orthodontics</li><li>Facial & Jaw Aesthetics</li>";
+      document.getElementById("galleryTitle").innerText = isArabic ? "معرض الصور" : "Gallery";
+      document.getElementById("reviewsTitle").innerText = isArabic ? "آراء المرضى" : "Patient Reviews";
+      document.getElementById("mapTitle").innerText = isArabic ? "موقع العيادة" : "Clinic Location";
+      document.getElementById("contactTitle").innerText = isArabic ? "تواصل معنا" : "Contact Us";
+      document.getElementById("address").innerText = isArabic ? "العنوان: بغداد – كويريش – حي الربيع – الطابق الأرضي" : "Address: Baghdad – Kureish – Al-Rabee District – Ground Floor";
+      document.getElementById("phone").innerText = isArabic ? "الهاتف: 07725006748" : "Phone: 07725006748";
+      document.getElementById("email").innerText = isArabic ? "البريد الإلكتروني: Mujtaba.a.sa@gmail.com" : "Email: Mujtaba.a.sa@gmail.com";
+    }
+  </script>
+</body>
+</html>
